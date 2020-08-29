@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>MailTester.com</title><meta name="copyright" content="Site by Brecht Sanders, all rights reserved"><meta name="description" content="Check if an e-mail address is valid or not. Find out why a mail bounces. Get technical information about a mail account and it's mail (SMTP) server. Check large batches of e-mail addresses in bulk by uploading your e-mail lists to our cloud solution, and download the result file when checking is complete, or integrate with several mail campaign solutions. For developers an API is available for both single and bulk e-mail verifications, allowing integration in your own applications."><meta name="keywords" content="e-mail,check,test,verify,lookup,smtp,mail,email,protocol,vrfy,free,bulk,batch,api,cheap,cheapest,cloud,business,integration"><meta name="author" content="Brecht Sanders"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><meta name="DC.Title" content="MailTester.com"><meta name="DC.Creator.PersonalName" content="Brecht Sanders"><meta name="DC.Format" content="text/html"><meta name="DC.Language" content="en"><meta name="google-site-verification" content="vkbLZEPHahtiU971aJpwixbk-pPOR1NTw3Nw8F8DDFE"><link rel="stylesheet" type="text/css" href="css/css-stylesheet.css"><link rel="stylesheet" type="text/css" href="css/css-navigation.css"><!-- https://github.com/osano/cookieconsent --><!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent --><!--
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"","theme":"dark-floating"};
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+--><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"><!-- End Cookie Consent plugin --><script src="js/recaptcha-api.js"></script><meta name="google-site-verification" content="TzemRwzWh1EVXKJnkjDYS91_MQKUw4-3uYmBrD6V4dk"></head><body>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script src="js/build-cookieconsent.min.js" data-cfasync="false"></script><script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000000"
+    },
+    "button": {
+      "background": "#F1D600"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "content": {
+    "href": "cookie_policy.php"
+  }
+});
+</script><!-- End Cookie Consent plugin --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79575131-1', 'auto');
+  ga('send', 'pageview');
+</script><div id="topbar">
+  <nav role="navigation"><div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox"><!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      --><span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu"><li><a href="testmail.html">Verify E-mail Address</a></li>
+<!--
+        <li><a href="download.php">Download</a></li>
+        <li><a href="links.php">Links</a></li>
+-->
+        <li><a href="https://app.mailtester.com/">Verify lists in bulk</a></li>
+        <li><a href="https://api.mailtester.com/">API for developers</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact | Policy</a></li>
+      </ul></div>
+  </nav><!--
+<div id="logo">MailTester.com</div>
+--><div id="logo"><img src="images/images-logo_new.png" width="322" height="48" border="0"></div>
+</div>
+
+<div id="maincontent">
+
+
+<h1>E-mail address verification</h1>
+
+<h2>Bulk check &nbsp; <span style="color:#990000; font-style: italic; font-size: .75em">NEW</span></h2>
+<p>MailTester.com now offers a complete business solution for verifying large lists of e-mail addresses.<br><span style="color:#777777; font-size: .85em">99% accurate bulk email verification.<br>
+Verify your large email lists with new MailTester.com bulk email verifier.<br>
+** Get your free 100 credits **</span><br></p>
+<table><tr><th>&nbsp;</th>
+		<td><form method="get" action="https://app.mailtester.com/signup"><input type="submit" value="Sign up new account" class="Button"></form></td>
+		<th>&nbsp;</th>
+		<td><form method="get" action="https://app.mailtester.com/signin"><input type="submit" value="Log in with existing account" class="Button"></form></td>
+	</tr></table><p><span style="color:#777777; font-size: .85em">For software developers: <a href="https://api.mailtester.com/">API</a> now also available.</span></p>
+
+<h2>Single check</h2>
+
+<form method="post" action="testmail.php">
+<input type="hidden" name="lang" value="en"><table><tr><th>E-mail address</th>
+		<td><input type="text" name="email" value="" size="48" autofocus="autofocus"></td>
+	</tr><tr><th>&nbsp;</th>
+				<td><div class="g-recaptcha" data-sitekey="6LcqCNUUAAAAAE81lZDgDk7Y0rv_oTGa19I5kqlg"></div></td>
+			</tr><tr><th>&nbsp;</th>
+		<td><input type="submit" value="Check address" class="Button"></td>
+	</tr></table></form>
+
+			<h2>Welcome to MailTester.com</h2>
+			<h3>What is it?</h3>
+			Here you can enter an e-mail address to verify if it exists of if there are problems with it.<br>
+			A series of checks will be performed on the e-mail address but no actual e-mail is sent.<br><h3 style="clear: both">How does it work?</h3>
+			Just enter the e-mail address and wait for the test results to appear.<br>
+			There you will see the results of the different checks that are performed:
+			<ul><li><u>Syntax check</u><br>If the format is incorrect it will be reported why. For example: unsupported characters, missing @-sign.</li>
+				<li><u>DNS lookup</u><br>Any problems looking up the domain (the part after the @-sign) in DNS (Domain Name System) will be reported.</li>
+				<li><u>SMTP verification</u><br>If possible an SMTP connection will be made to a mail server that is responsible for the e-mail, and any issues are reported.<br>Note that for some domains the SMTP servers don't allow verification, so no information can be found. In this case the e-mail address may or may not exist.</li>
+			</ul>
+			Please see the <a href="faq.html">frequently asked questions</a> for more information.<br><h3>Who uses this site?</h3>
+			<ul><li>Marketing professionals</li>
+				<li>IT professionals</li>
+				<li>Commercial and non-profit organisations</li>
+				<li>Private individuals</li>
+				<li>...</li>
+			</ul><h3>Volume/batch checking</h3>
+			Please note online check on this webpage is for individual email checks only.<br>
+			For bulk email checks in batch, please register to <a href="https://app.mailtester.com/signup">Mailtester premium</a> and get free 100 credits.<br><h3>API for developers &nbsp; <span style="color:#990000; font-style: italic; font-size: .75em">NEW</span></h3>
+			Mailtester premium offers two easy-to-integrate and customizable APIs: Bulk email check API and Real-time email check API.<br>
+			Available in four libraries: PHP, Python, Ruby, C#.<br>
+			For more details, please visit the <a href="https://api.mailtester.com/">API section</a>.<br><br></div>
+
+<!-- live chat -->
+<!--
+<script>
+  (function(d,t) {
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src="https://app.upsend.io/embed.js"
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      new window.UpsendMessengerEncrypted({
+        domain: 'https://app.upsend.io',
+        ws:  'wss://app.upsend.io/cable',
+        app_id: "mgARi0svQjCrMsdFAVOI7Q",
+        lang: "DEFAULTS",
+      })
+    }
+  })(document,"script");
+</script>
+-->
+      
+<div id="bottombar">Brought to you Brecht Sanders &nbsp; &nbsp; 2000-2020 &nbsp; &nbsp; all rights reserved &nbsp; &nbsp; <a href="privacy_policy.html">Privacy Policy</a></div>
+
+</body></html>
